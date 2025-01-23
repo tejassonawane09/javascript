@@ -19,7 +19,7 @@ const bigNumber=43245654n
 
 
 
-//Reference Datatype(call by reference)
+//Reference Datatype(call by reference)//Non-primitive
   //Array,Objects,functions
 
 const heros=["shakiman","naagraj","doga"]
@@ -33,3 +33,32 @@ const myfunction= function (){
 }
 
 console.log(typeof bigNumber);
+
+
+//==========================================================
+
+// Stack(primitive) ,Heap(Non-primitive)
+
+//stack
+let myForex="TejFx"
+
+let anotherName=myForex
+anotherName="TejasForex"
+console.log(anotherName);
+console.log(myForex);
+
+
+let userOne={
+    email:"user@google.com",
+    upi:"user@okhdfcbank"
+}
+
+let userTwo=userOne
+
+userTwo.email="tejas@.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
