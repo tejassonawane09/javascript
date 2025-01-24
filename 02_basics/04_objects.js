@@ -19,7 +19,7 @@ const regularUser={
     }
 }
 //value always access using dot(.) notation
-console.log(regularUser.fullname?.usersFullname);
+//console.log(regularUser.fullname?.usersFullname);
 
 const obj1= {1:"a",2:"b"}
 const obj2= {3:"a",4:"b"}
@@ -30,7 +30,7 @@ const obj4= {5:"a",6:"b"}
 //const obj3= Object.assign({},obj1,obj2,obj4)//combine objects 
 
 const obj3={...obj1,...obj2}//use spread //simple syntax //use 90%
-console.log(obj3);//combine gets prints on it
+//console.log(obj3);//combine gets prints on it
 
 
 const users=[
@@ -44,19 +44,53 @@ const users=[
     }
 ]
 users[1].emaillog
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));//use for keys 
-console.log(Object.values(tinderUser));//use for keys values
-console.log(Object.entries(tinderUser));
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));//true
-
-
+// console.log(Object.keys(tinderUser));//use for keys 
+// console.log(Object.values(tinderUser));//use for keys values
+// console.log(Object.entries(tinderUser));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));//true
 
 
 
 
 
 
+//Object de-structure:
 
+const course={
+    courseName:'js',
+    price:'1000',
+    courseInstructor:'Tejas'
+}
+
+//course.courseInstructor//use the values
+
+const {courseInstructor:instructor}=course
+console.log(instructor);
+//console.log(courseInstructor);//easy to access
+
+
+
+// const navbar=({company})=>{
+
+// }
+
+// navbar(company='Tejas') 
+
+
+
+
+
+//   {
+//      name:'Tejas',
+//      courseName:'js',
+//      price:'free'
+//   }
+
+[
+    {},
+    {},
+    {}
+]
 
